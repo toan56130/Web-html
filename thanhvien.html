@@ -1,133 +1,98 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web HTML</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://toan56130.github.io/Web-html/style.css">
+    <link rel="stylesheet" href="https://toan56130.github.io/Web-html/tuyeroi.css">
 
     <style>
-    button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #1E3A8A; /* Xanh đậm */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-button:hover {
-    background-color: #3B82F6; /* Xanh nhạt khi hover */
-}
-
-        body {
-            font-family: 'Poppins', sans-serif;
+   
+        
+        * {
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-            color: #333;
+            box-sizing: border-box;
+        }
+        a {
+            text-decoration: none;
+            color: white;
         }
         header {
-            background: #ff6f61;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: blue;
+            height: 70px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 0 20px;
             color: white;
-            text-align: center;
-            padding: 15px;
-            font-size: 1.5em;
-            font-weight: 600;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
         }
-        section {
-            padding: 20px;
-            margin: 30px auto;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
+        header .logo {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
         }
-        h2 {
-            color: #ff6f61;
-            font-weight: 600;
+        header ul.menu {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        header ul.menu > li {
+            padding: 10px 15px;
+        }
+        header ul.menu > li a {
+            font-size: 14px;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
     </style>
 </head>
 <body>
     <header>
-        Em xin giới thiệu thành viên của tổ em
+        <div class="logo">Web Giới Thiệu Thành Viên</div>
+        <ul class="menu">
+            <li><a href="https://toan56130.github.io/Web-html/trangchu1.html">Trang Chủ</a></li>
+            <li><a href="https://toan56130.github.io/Web-html/thanhvien.html">Thành Viên</a></li>          
+            
+        </ul>
     </header>
-    
-    <section>
-        
-        <script src="https://toan56130.github.io/Web-html/hoaanhdao.js"></script>
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                new Sakura("body", {
-                    fallSpeed: 1,
-                    maxSize: 14,
-                    minSize: 10,
-                    delay: 300
-                });
-            });
-        </script>
-       <ul>
-        <h2>1, Nguyễn Thị Thúy</h2>
-            <img height="400px"src="https://res.cloudinary.com/db4uf6vj0/image/upload/v1743142162/Messenger_creation_5800CE68-3772-44B9-B195-51C87C7AC51D_wchhc6.jpg">
-        </ul>
-        <ul>
-            <li>
-                <strong>Sinh ngày:</strong> 9/6/2007
-            </li>
-            <li>
-                <strong>Sở thích:</strong> nghe nhạc, đọc sách 
-            </li>
-        </ul>
-        <ul>
-            <h2>2, Lê Thị Thanh Loan</h2>
-            <img height="400px" src="https://res.cloudinary.com/db4uf6vj0/image/upload/v1743144089/IMG_20250328_133903_acyyx9.jpg">
-        </ul>
-        <ul>
-            <li><strong>Sinh ngày:</strong> 10/06/2007</li>
-            <li><strong>Sở thích:</strong> chơi với mèo, sưu tầm card, album, truyện, đĩa nhạc, hot wheels</li>
-            <li><strong>Những lúc vui:</strong> chụp ảnh</li>
-            <li><strong>Những lúc buồn:</strong> nghe nhạc</li>
-            <li><strong>Những lúc học:</strong> nghe tiếng mưa</li>
-            <li><strong>Những lúc ăn:</strong> nghe kể chuyện ma</li>
-            <li><strong>Trước lúc ngủ:</strong> nghĩ về tương lai</li>
-            <li><strong>Ước mơ:</strong> BMW 430i + Porsche GT3 RS</li>
-        </ul>
-        <ul>
-            <h2>3, Nguyễn Văn Toàn</h2>
-            <img height="400px" src="https://res.cloudinary.com/db4uf6vj0/image/upload/v1743144233/NVD07353_tdfffg.jpg">
-        </ul>
-        <ul>
-            <li><strong>Sinh ngày:</strong> 18/10/2007</li>
-            <li>Là người sống ở Long Trì, luôn hòa đồng với mọi người xung quanh</li>
-            <li>
-                <strong>Sở thích:</strong> chơi game, nghe nhạc, xem phim
-            </li>
-        </ul>
-        <ul>
-            <h2>
-                4, Dương Phúc Thảo
-            </h2>
-            <img height="400px"  src="https://res.cloudinary.com/db4uf6vj0/image/upload/v1743161285/Messenger_creation_EA251009-CDB5-4194-A193-E8BAACFD52D7_i8zgm6.jpg"
-        </ul>  
-            <ul>
-                <li>
-                    <strong>Sinh ngày:</strong> 12/8/2007
-                </li>
-                <li>
-                    <strong>  Sở thích:</strong> chơi thể thao,chơi game , đọc truyện
-                </li>
-                <li>
-                <strong> Ước mơ:</strong> làm tỉ phú giàu nhất trong đám nhà nghèo ,nghèo nhất trong đám nhà giàu :))
-                </li>
-            </ul>
-            <a href="https://toan56130.github.io/Web-html/trangchu1.html">
-    <button>Trang chủ</button>
-</a>
 
-    </section>
+    <div>
+        <img src="https://res.cloudinary.com/db4uf6vj0/image/upload/v1743141931/IMG_20250328_130052_pfjcuf.jpg">
+    </div>
 </body>
+    <body>
+           <script src="https://toan56130.github.io/Web-html/tuyetroi.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            new Sakura("body", {
+                fallSpeed: 1,
+                maxSize: 14,
+                minSize: 10,
+                delay: 300
+            });
+        });
+    </script>
+        <audio controls loop  autoplay>
+  <source   src="https://www.dropbox.com/scl/fi/ea8wf0hui38oxcv8mxbal/youtube_MVMIwIJtMdU_audio.mp3?rlkey=znfq57vmp87fc4kxwg8xhky4h&st=50u17g93&raw=1" type="audio/mpeg"
+  >
+  
+</audio>
+
+    </body>
+    
+ 
+
 </html>
