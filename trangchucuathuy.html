@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web HTML</title>
+  <script>
+  document.addEventListener("click", function () {
+    const audio = document.querySelector("audio");
+    if (audio) audio.play();
+  });
+</script>
+
+    <style>
+   
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: blue;
+            height: 70px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 0 20px;
+            color: white;
+            z-index: 1000;
+        }
+        header .logo {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        header ul.menu {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        header ul.menu > li {
+            padding: 10px 15px;
+        }
+        header ul.menu > li a {
+            font-size: 14px;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+    <header>
+        <div class="logo">Web Giới Thiệu bản thân</div>
+        <ul class="menu">
+            <li><a href="https://toan56130.github.io/Web-html/trangchucuathuy.html">Trang Chủ</a></li>
+            <li><a href="https://toan56130.github.io/Web-html/thanhviencuathuy.html">Thành Viên</a></li>          
+          
+        </ul>
+    </header>
+  <body>
+    <img width="480px" height="600px" src="https://res.cloudinary.com/db4uf6vj0/image/upload/v1746794004/Messenger_creation_1D3EC09E-E260-47B6-9309-99BD2F616282_so68em.jpg">
+    
+    <audio controls>
+  <source src="https://www.dropbox.com/scl/fi/363lt42o0lw0ovt5mmq81/Taylor-Swift-Enchanted.mp3?rlkey=mbm24ezljukb6846iobrjj70u&st=pm3ljjxl&raw=1" type="audio/mpeg">
+
+</audio>
+
+    
+  </body>
+  
