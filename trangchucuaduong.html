@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web HTML</title>
+  <script>
+  document.addEventListener("click", function () {
+    const audio = document.querySelector("audio");
+    if (audio) audio.play();
+  });
+</script>
+
+    <style>
+   
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: blue;
+            height: 70px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 0 20px;
+            color: white;
+            z-index: 1000;
+        }
+        header .logo {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        header ul.menu {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        header ul.menu > li {
+            padding: 10px 15px;
+        }
+        header ul.menu > li a {
+            font-size: 14px;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+    <header>
+        <div class="logo">Web Giới Thiệu bản thân</div>
+        <ul class="menu">
+            <li><a href="https://toan56130.github.io/Web-html/trangchucuaduong.html">Trang Chủ</a></li>
+            <li><a href="https://toan56130.github.io/Web-html/thanhviencuaduong.html">Thành Viên</a></li>          
+          
+        </ul>
+    </header>
+  <body>
+    <video loop muted autoplay   controls>
+  <source src="https://www.dl.dropboxusercontent.com/scl/fi/0qc8694aylclppp9ruq4y/Messenger_creation_D498C267-5B21-4B0F-8841-E676F64FCF29.mp4?rlkey=fau4xzic9f859kev2r57x9txw&raw=1" type="video/mp4">
+ 
+</video>
+  <section>
+    <audio autoplay loop controls>
+  <source src="https://www.dropbox.com/scl/fi/mku5sy3uc40gkvoth21ti/Nightcore-Play-x-Alone-x-Darkside-x-Ignite-Switching-Vocals.mp3?rlkey=wy6ipu7dmwpv1jreq9b4w0oq5&st=lnpaxetm&raw=1" type="audio/mpeg">
+</audio>
+
+  </section>
+</html>
